@@ -27,7 +27,7 @@ tasks.test {
 
 sonar {
   properties {
-    property "sonar.projectKey", "littlec0rgi_third-app"
-    property "sonar.organization", "littlec0rgi"
+    property("sonar.projectKey", "littlec0rgi_third-app")
+    property("sonar.organization", "littlec0rgi")
   }
 }
