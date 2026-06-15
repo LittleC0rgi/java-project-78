@@ -1,5 +1,6 @@
 plugins {
     id("application")
+    id("org.sonarqube") version "7.2.3.8318"
 }
 
 application {
@@ -22,4 +23,11 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "littlec0rgi_third-app"
+    property "sonar.organization", "littlec0rgi"
+  }
 }
