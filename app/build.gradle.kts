@@ -1,6 +1,6 @@
 plugins {
     id("application")
-    id("org.sonarqube") version "7.2.3.8318"
+    id("org.sonarqube") version "7.2.3.7755"
 }
 
 application {
