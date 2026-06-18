@@ -18,6 +18,12 @@ public class NumberSchema extends BaseSchema<Integer> {
     }
 
     @Override
+    public NumberSchema required() {
+        super.required();
+        return this;
+    }
+
+    @Override
     protected boolean validate(Integer value) {
 
         if (isPositive && value <= 0) {

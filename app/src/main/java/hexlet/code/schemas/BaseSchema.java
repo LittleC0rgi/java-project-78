@@ -8,12 +8,16 @@ public abstract class BaseSchema<T> {
         return this;
     }
 
-    public boolean isValid(T value) {
+    public boolean isValid(Object value) {
         if (value == null) {
             return !isRequired;
         }
 
-        return validate(value);
+        return validate(cast(value));
+    }
+
+    private T cast(Object value) {
+        return (T) value;
     }
 
     protected abstract boolean validate(T value);

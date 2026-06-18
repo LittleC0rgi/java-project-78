@@ -32,4 +32,10 @@ public class StringSchema extends BaseSchema<String> {
 
         return true;
     }
+
+    @Override
+    public StringSchema required() {
+        super.required();
+        return this;
+    }
 }
