@@ -1,13 +1,8 @@
 plugins {
-    id("application")
+    id("java")
     id("checkstyle")
     id("jacoco")
     id("org.sonarqube") version "7.2.3.7755"
-}
-
-application {
-    // Define the main class for the application.
-    mainClass = "hexlet.code.App"
 }
 
 group = "hexlet.code"
